@@ -26,5 +26,30 @@ namespace Balkan_Wings_1
         {
 
         }
+
+        private void sign_up_Click(object sender, EventArgs e)
+        {
+
+            signup signup = new signup();
+
+            if (signup.ShowDialog() == DialogResult.OK)
+            {
+
+
+            }
+
+        }
+
+        private void sing_up_picture_Click(object sender, EventArgs e)
+        {
+            signup signup = new signup();
+
+            if (signup.ShowDialog() == DialogResult.OK)
+            {
+
+
+            }
+
+        }
     }
 }
