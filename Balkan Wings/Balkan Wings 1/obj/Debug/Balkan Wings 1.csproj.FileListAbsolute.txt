@@ -1,0 +1,20 @@
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\bin\Debug\Balkan Wings 1.exe.config
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\bin\Debug\Balkan Wings 1.exe
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\bin\Debug\Balkan Wings 1.pdb
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.csproj.AssemblyReference.cache
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan_Wings_1.Form1.resources
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan_Wings_1.Properties.Resources.resources
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.csproj.GenerateResource.cache
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.csproj.CoreCompileInputs.cache
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.exe
+C:\Users\dmlad\source\repos\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.pdb
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\bin\Debug\Balkan Wings 1.exe.config
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\bin\Debug\Balkan Wings 1.exe
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\bin\Debug\Balkan Wings 1.pdb
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.csproj.AssemblyReference.cache
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan_Wings_1.Form1.resources
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan_Wings_1.Properties.Resources.resources
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.csproj.GenerateResource.cache
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.csproj.CoreCompileInputs.cache
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.exe
+C:\Users\dmlad\OneDrive\Desktop\Balkan Wings 1\Balkan Wings 1\obj\Debug\Balkan Wings 1.pdb
