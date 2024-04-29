@@ -113,6 +113,16 @@ namespace Balkan_Wings_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap homebackground {
             get {
                 object obj = ResourceManager.GetObject("homebackground", resourceCulture);
@@ -136,6 +146,16 @@ namespace Balkan_Wings_1.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap my_profile {
+            get {
+                object obj = ResourceManager.GetObject("my_profile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

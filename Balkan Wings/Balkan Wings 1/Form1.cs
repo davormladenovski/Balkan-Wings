@@ -16,9 +16,7 @@ namespace Balkan_Wings_1
         {
             InitializeComponent();
 
-            User new_user = new User();
-
-            users.Add(new_user = new User("Alex","Willson","alexw123@yahoo.com","072312312","Alexwillson123."));
+            users.Add(new User("Alex","Willson","alexw123@yahoo.com","072312312","Alexwillson123."));
             users.Add(new User("John", "Doe", "johndoe@gmail.com", "071234567", "JohnDoe@123"));
             users.Add(new User("Emily", "Smith", "emilysmith@hotmail.com", "075555555", "Emily@Smith2022"));
             users.Add(new User("Sophia", "Martinez", "sophiamartinez@yahoo.com", "0799999999", "Sophia_2023"));
@@ -61,18 +59,31 @@ namespace Balkan_Wings_1
 
                 List<User> usersCopy = new List<User>(users);
 
+                bool flag = false;
+
                 foreach (User user in usersCopy)
                 {
 
-                    if (user.email == new_user.email || user.phone == new_user.phone)
+                    if (user.email == new_user.email && user.phone == new_user.phone)
                     {
-
-                        MessageBox.Show("User with the same details already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        flag = true;
+                        break;
                     }
                     else
                     {
-                        users.Add(new_user);
+                        flag = false;
+                        
                     }
+                }
+
+                if (flag)
+                {
+                    MessageBox.Show("User with the same details already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    users.Add(new_user);
+                    MessageBox.Show("Your account has been successfully entered into our database!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }
@@ -104,9 +115,12 @@ namespace Balkan_Wings_1
                 foreach (User user in usersCopy)
                 {
 
-                    if (user.email == new_user.email || user.phone == new_user.phone)
+                    if (user.email == new_user.email || user.password == new_user.password)
                     {
-                        
+                        flag = false; 
+                        new_user=user;
+                        break;
+
                     }
                     else
                     {
@@ -119,6 +133,14 @@ namespace Balkan_Wings_1
                 {
                     MessageBox.Show("The user does not exist in our database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
+                }
+                else
+                {
+
+                    dashboard dashboard = new dashboard(new_user);
+                    dashboard.ShowDialog();
+                   
+
                 }
 
             }

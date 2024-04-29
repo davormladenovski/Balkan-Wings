@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.login = new System.Windows.Forms.Label();
+            this.login_picture = new System.Windows.Forms.PictureBox();
             this.sign_up = new System.Windows.Forms.Label();
+            this.sing_up_picture = new System.Windows.Forms.PictureBox();
+            this.Main_logo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.login_picture = new System.Windows.Forms.PictureBox();
-            this.sing_up_picture = new System.Windows.Forms.PictureBox();
-            this.Main_logo = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.login_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sing_up_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Main_logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -61,7 +61,6 @@
             this.groupBox1.Size = new System.Drawing.Size(256, 699);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // login
             // 
@@ -75,6 +74,18 @@
             this.login.Text = "Login";
             this.login.Click += new System.EventHandler(this.login_Click);
             // 
+            // login_picture
+            // 
+            this.login_picture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.login_picture.Image = global::Balkan_Wings_1.Properties.Resources.login_icon;
+            this.login_picture.Location = new System.Drawing.Point(66, 334);
+            this.login_picture.Name = "login_picture";
+            this.login_picture.Size = new System.Drawing.Size(50, 50);
+            this.login_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.login_picture.TabIndex = 5;
+            this.login_picture.TabStop = false;
+            this.login_picture.Click += new System.EventHandler(this.login_picture_Click);
+            // 
             // sign_up
             // 
             this.sign_up.AutoSize = true;
@@ -86,6 +97,28 @@
             this.sign_up.TabIndex = 3;
             this.sign_up.Text = "Sign Up";
             this.sign_up.Click += new System.EventHandler(this.sign_up_Click);
+            // 
+            // sing_up_picture
+            // 
+            this.sing_up_picture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sing_up_picture.Image = global::Balkan_Wings_1.Properties.Resources.signup_icon;
+            this.sing_up_picture.Location = new System.Drawing.Point(66, 256);
+            this.sing_up_picture.Name = "sing_up_picture";
+            this.sing_up_picture.Size = new System.Drawing.Size(50, 50);
+            this.sing_up_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sing_up_picture.TabIndex = 3;
+            this.sing_up_picture.TabStop = false;
+            this.sing_up_picture.Click += new System.EventHandler(this.sing_up_picture_Click);
+            // 
+            // Main_logo
+            // 
+            this.Main_logo.Image = global::Balkan_Wings_1.Properties.Resources.logo;
+            this.Main_logo.Location = new System.Drawing.Point(27, 30);
+            this.Main_logo.Name = "Main_logo";
+            this.Main_logo.Size = new System.Drawing.Size(204, 191);
+            this.Main_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Main_logo.TabIndex = 1;
+            this.Main_logo.TabStop = false;
             // 
             // label1
             // 
@@ -129,40 +162,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // login_picture
-            // 
-            this.login_picture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.login_picture.Image = global::Balkan_Wings_1.Properties.Resources.login_icon;
-            this.login_picture.Location = new System.Drawing.Point(66, 334);
-            this.login_picture.Name = "login_picture";
-            this.login_picture.Size = new System.Drawing.Size(50, 50);
-            this.login_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.login_picture.TabIndex = 5;
-            this.login_picture.TabStop = false;
-            this.login_picture.Click += new System.EventHandler(this.login_picture_Click);
-            // 
-            // sing_up_picture
-            // 
-            this.sing_up_picture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sing_up_picture.Image = global::Balkan_Wings_1.Properties.Resources.signup_icon;
-            this.sing_up_picture.Location = new System.Drawing.Point(66, 256);
-            this.sing_up_picture.Name = "sing_up_picture";
-            this.sing_up_picture.Size = new System.Drawing.Size(50, 50);
-            this.sing_up_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sing_up_picture.TabIndex = 3;
-            this.sing_up_picture.TabStop = false;
-            this.sing_up_picture.Click += new System.EventHandler(this.sing_up_picture_Click);
-            // 
-            // Main_logo
-            // 
-            this.Main_logo.Image = global::Balkan_Wings_1.Properties.Resources.logo;
-            this.Main_logo.Location = new System.Drawing.Point(27, 30);
-            this.Main_logo.Name = "Main_logo";
-            this.Main_logo.Size = new System.Drawing.Size(204, 191);
-            this.Main_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Main_logo.TabIndex = 1;
-            this.Main_logo.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -182,12 +181,12 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.login_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sing_up_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Main_logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
