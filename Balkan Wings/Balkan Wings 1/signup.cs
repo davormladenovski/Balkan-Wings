@@ -110,6 +110,7 @@ namespace Balkan_Wings_1
             }
 
             user = new User(name, surname, email, phone, password);
+            this.DialogResult= DialogResult.OK;
 
 
         }
@@ -188,7 +189,8 @@ namespace Balkan_Wings_1
 
         private void lb_login_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Cancel;
+            this.DialogResult = DialogResult.No;
+            this.Close();
         }
     }
 }

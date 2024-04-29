@@ -73,6 +73,7 @@
             this.login.Size = new System.Drawing.Size(81, 31);
             this.login.TabIndex = 4;
             this.login.Text = "Login";
+            this.login.Click += new System.EventHandler(this.login_Click);
             // 
             // sign_up
             // 
@@ -138,6 +139,7 @@
             this.login_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.login_picture.TabIndex = 5;
             this.login_picture.TabStop = false;
+            this.login_picture.Click += new System.EventHandler(this.login_picture_Click);
             // 
             // sing_up_picture
             // 

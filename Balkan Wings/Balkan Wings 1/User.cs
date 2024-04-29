@@ -26,5 +26,9 @@ namespace Balkan_Wings_1
             this.phone = phone;
             this.password = password;
         }
+
+        public User()
+        {
+        }
     }
 }

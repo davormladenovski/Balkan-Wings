@@ -188,6 +188,7 @@
             // 
             // picture_show_pass
             // 
+            this.picture_show_pass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picture_show_pass.Image = global::Balkan_Wings_1.Properties.Resources.show_pass;
             this.picture_show_pass.Location = new System.Drawing.Point(280, 338);
             this.picture_show_pass.Name = "picture_show_pass";
@@ -217,7 +218,7 @@
             this.Controls.Add(this.tb_surname);
             this.Controls.Add(this.tb_name);
             this.Controls.Add(this.label1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
