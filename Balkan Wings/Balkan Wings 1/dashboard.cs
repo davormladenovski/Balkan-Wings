@@ -36,7 +36,21 @@ namespace Balkan_Wings_1
             if (result == DialogResult.Yes)
             {
                 
-                this.Close();
+                this.DialogResult = DialogResult.OK;
+            }
+        }
+
+        private void picture_my_profile_Click(object sender, EventArgs e)
+        {
+            myprofile myprofile = new myprofile(current_user);
+            this.Hide();
+            if(myprofile.ShowDialog() == DialogResult.OK) {
+
+               current_user = myprofile.current_user;
+               this.Show();
+               dashboard_Load(sender, e);
+               
+
             }
         }
     }

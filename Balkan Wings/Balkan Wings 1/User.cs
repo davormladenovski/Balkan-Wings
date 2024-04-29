@@ -9,14 +9,18 @@ namespace Balkan_Wings_1
     public class User
     {
 
-        public string name {  get; set; }
+        public string name { get; set; }
         public string surname { get; set; }
 
-        public string email {  get; set; }
+        public string email { get; set; }
 
         public string phone { get; set; }
 
         public string password { get; set; }
+
+        public string Address = " "; 
+
+        public string passport_num = " ";
 
         public User(string name, string surname, string email, string phone, string password)
         {

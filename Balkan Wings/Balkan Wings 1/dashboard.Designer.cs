@@ -32,6 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label_name = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.picture_my_profile = new System.Windows.Forms.PictureBox();
             this.picture_logout = new System.Windows.Forms.PictureBox();
             this.Main_logo = new System.Windows.Forms.PictureBox();
@@ -64,6 +66,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(170)))), ((int)(((byte)(187)))));
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.picture_my_profile);
             this.groupBox1.Controls.Add(this.picture_logout);
             this.groupBox1.Controls.Add(this.Main_logo);
@@ -75,6 +79,26 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Black", 10F);
+            this.label2.Location = new System.Drawing.Point(770, 182);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 24);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "My profile";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Black", 10F);
+            this.label3.Location = new System.Drawing.Point(908, 182);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 24);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Logout";
+            // 
             // picture_my_profile
             // 
             this.picture_my_profile.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -85,6 +109,7 @@
             this.picture_my_profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture_my_profile.TabIndex = 4;
             this.picture_my_profile.TabStop = false;
+            this.picture_my_profile.Click += new System.EventHandler(this.picture_my_profile_Click);
             // 
             // picture_logout
             // 
@@ -137,5 +162,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox picture_logout;
         private System.Windows.Forms.PictureBox picture_my_profile;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -111,25 +111,25 @@ namespace Balkan_Wings_1
                 User new_user = login.user;
 
                 List<User> usersCopy = new List<User>(users);
-                bool flag = false;
+                bool flag=false;
                 foreach (User user in usersCopy)
                 {
 
-                    if (user.email == new_user.email || user.password == new_user.password)
+                    if (user.email == new_user.email && user.password == new_user.password)
                     {
-                        flag = false; 
+                        flag = true; 
                         new_user=user;
                         break;
 
                     }
                     else
                     {
-                        flag = true;
+                        flag = false;
                         
                     }
                 }
 
-                if (flag == true)
+                if (flag == false)
                 {
                     MessageBox.Show("The user does not exist in our database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -138,9 +138,13 @@ namespace Balkan_Wings_1
                 {
 
                     dashboard dashboard = new dashboard(new_user);
-                    dashboard.ShowDialog();
-                   
+                    this.Hide();
+                    if (dashboard.ShowDialog() == DialogResult.OK)
+                    {
 
+                        this.Show();
+                    }
+                  
                 }
 
             }
