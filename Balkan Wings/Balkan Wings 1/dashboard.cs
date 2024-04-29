@@ -14,6 +14,7 @@ namespace Balkan_Wings_1
     {
 
         public User current_user;
+
         public dashboard(User user)
         {
             InitializeComponent();
