@@ -28,3 +28,5 @@ C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Deb
 C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan Wings 1.csproj.CoreCompileInputs.cache
 C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan Wings 1.exe
 C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan Wings 1.pdb
+C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan_Wings_1.signup.resources
+C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan_Wings_1.login.resources
