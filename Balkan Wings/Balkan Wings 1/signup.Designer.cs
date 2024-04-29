@@ -223,6 +223,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "signup";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Sign Up";
             this.Load += new System.EventHandler(this.signup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.error_non_digit)).EndInit();
