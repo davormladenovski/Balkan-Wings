@@ -22,6 +22,8 @@ namespace Balkan_Wings_1
 
         public string passport_num = " ";
 
+        public List<Flight> booked_flights { get; set; }
+
         public User(string name, string surname, string email, string phone, string password)
         {
             this.name = name;

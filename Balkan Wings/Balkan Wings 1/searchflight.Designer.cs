@@ -37,9 +37,9 @@
             this.box_to = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.bt_search = new System.Windows.Forms.Button();
             this.bt_clear = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.bt_search = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picture_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fligts_data_grid)).BeginInit();
@@ -125,20 +125,6 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "To:";
             // 
-            // bt_search
-            // 
-            this.bt_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
-            this.bt_search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_search.Font = new System.Drawing.Font("Arial Black", 7.5F);
-            this.bt_search.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bt_search.Location = new System.Drawing.Point(903, 346);
-            this.bt_search.Name = "bt_search";
-            this.bt_search.Size = new System.Drawing.Size(108, 38);
-            this.bt_search.TabIndex = 12;
-            this.bt_search.Text = "Search";
-            this.bt_search.UseVisualStyleBackColor = false;
-            this.bt_search.Click += new System.EventHandler(this.bt_search_Click);
-            // 
             // bt_clear
             // 
             this.bt_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
@@ -160,13 +146,27 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Arial", 8F);
-            this.label4.Location = new System.Drawing.Point(761, 479);
+            this.label4.Location = new System.Drawing.Point(756, 476);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(2);
             this.label4.Size = new System.Drawing.Size(255, 38);
             this.label4.TabIndex = 14;
             this.label4.Text = "If you want to make a flight reservation\r\nyou must remember its number!\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // bt_search
+            // 
+            this.bt_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.bt_search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_search.Font = new System.Drawing.Font("Arial Black", 7.5F);
+            this.bt_search.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.bt_search.Location = new System.Drawing.Point(903, 346);
+            this.bt_search.Name = "bt_search";
+            this.bt_search.Size = new System.Drawing.Size(108, 38);
+            this.bt_search.TabIndex = 12;
+            this.bt_search.Text = "Search";
+            this.bt_search.UseVisualStyleBackColor = false;
+            this.bt_search.Click += new System.EventHandler(this.bt_search_Click);
             // 
             // searchflight
             // 
@@ -210,8 +210,8 @@
         private System.Windows.Forms.ComboBox box_to;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button bt_search;
         private System.Windows.Forms.Button bt_clear;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button bt_search;
     }
 }

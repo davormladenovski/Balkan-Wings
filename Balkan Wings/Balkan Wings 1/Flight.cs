@@ -17,7 +17,9 @@ namespace Balkan_Wings_1
         public int TotalSeats { get; set; }
         public int AvailableSeats { get; set; }
 
-        public Flight(string flightNumber, string departureLocation, string arrivalLocation, DateTime departureTime, DateTime arrivalTime, string aircraftType, int totalSeats, int availableSeats)
+        public int Price { get; set; }
+
+        public Flight(string flightNumber, string departureLocation, string arrivalLocation, DateTime departureTime, DateTime arrivalTime, string aircraftType, int totalSeats, int availableSeats, int price)
         {
             FlightNumber = flightNumber;
             DepartureLocation = departureLocation;
@@ -27,8 +29,17 @@ namespace Balkan_Wings_1
             AircraftType = aircraftType;
             TotalSeats = totalSeats;
             AvailableSeats = availableSeats;
+            Price = price;
         }
 
-        
+        public void bookseats(int num_tickets)
+        {
+            if (AvailableSeats > 0)
+            {
+                AvailableSeats-=num_tickets;
+            }
+        }
+
+
     }
 }

@@ -192,9 +192,10 @@ namespace Balkan_Wings_1
                     string aircraftType = GetRandomAircraftType();
                     int totalSeats = new Random().Next(100, 400);
                     int a = new Random().Next(0, totalSeats);
+                    int price = new Random().Next(100,500);
 
                     Flight flight = new Flight(flightNumber, departureLocation, arrivalLocation,
-                                               departureTime, arrivalTime, aircraftType, totalSeats, a);
+                                               departureTime, arrivalTime, aircraftType, totalSeats, a,price);
 
                     flights.Add(flight);
                 

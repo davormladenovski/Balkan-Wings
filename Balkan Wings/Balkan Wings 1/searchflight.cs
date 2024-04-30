@@ -24,7 +24,7 @@ namespace Balkan_Wings_1
 
         private void searchflight_Load(object sender, EventArgs e)
         {
-            //fligts_data_grid.DataSource = flights;
+            
         }
 
         public static string[] locations = { "New York", "London", "Paris", "Tokyo", "Dubai",
@@ -64,6 +64,7 @@ namespace Balkan_Wings_1
         {
             box_from.Text = " ";
             box_to.Text = " ";
+            
         }
     }
 }
