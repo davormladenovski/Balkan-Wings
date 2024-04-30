@@ -14,11 +14,12 @@ namespace Balkan_Wings_1
     {
 
         public User current_user;
-
-        public dashboard(User user)
+        public List<Flight> flights;
+        public dashboard(User user,List<Flight> f)
         {
             InitializeComponent();
             current_user = user;
+            flights = f;
         }
 
         private void dashboard_Load(object sender, EventArgs e)
@@ -52,6 +53,16 @@ namespace Balkan_Wings_1
                dashboard_Load(sender, e);
                
 
+            }
+        }
+
+        private void picture_flight_search_Click(object sender, EventArgs e)
+        {
+            searchflight searchflight = new searchflight(flights);
+            this.Hide();
+            if(searchflight.ShowDialog() == DialogResult.OK)
+            {
+                this.Show();
             }
         }
     }
