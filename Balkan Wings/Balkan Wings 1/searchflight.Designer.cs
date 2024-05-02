@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(searchflight));
-            this.picture_back = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.fligts_data_grid = new System.Windows.Forms.DataGridView();
             this.box_from = new System.Windows.Forms.ComboBox();
             this.box_to = new System.Windows.Forms.ComboBox();
@@ -40,22 +38,12 @@
             this.bt_clear = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.bt_search = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picture_back = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.fligts_data_grid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_back)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picture_back
-            // 
-            this.picture_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picture_back.Image = global::Balkan_Wings_1.Properties.Resources.back;
-            this.picture_back.Location = new System.Drawing.Point(967, 46);
-            this.picture_back.Name = "picture_back";
-            this.picture_back.Size = new System.Drawing.Size(44, 41);
-            this.picture_back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_back.TabIndex = 3;
-            this.picture_back.TabStop = false;
-            this.picture_back.Click += new System.EventHandler(this.picture_back_Click);
             // 
             // label1
             // 
@@ -67,16 +55,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Search for Flight";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Balkan_Wings_1.Properties.Resources.search_flights;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // fligts_data_grid
             // 
             this.fligts_data_grid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(250)))), ((int)(((byte)(254)))));
@@ -84,6 +62,7 @@
             this.fligts_data_grid.GridColor = System.Drawing.SystemColors.Control;
             this.fligts_data_grid.Location = new System.Drawing.Point(22, 93);
             this.fligts_data_grid.Name = "fligts_data_grid";
+            this.fligts_data_grid.ReadOnly = true;
             this.fligts_data_grid.RowHeadersWidth = 51;
             this.fligts_data_grid.RowTemplate.Height = 24;
             this.fligts_data_grid.Size = new System.Drawing.Size(724, 552);
@@ -141,7 +120,6 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.LightYellow;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -168,6 +146,28 @@
             this.bt_search.UseVisualStyleBackColor = false;
             this.bt_search.Click += new System.EventHandler(this.bt_search_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Balkan_Wings_1.Properties.Resources.search_flights;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picture_back
+            // 
+            this.picture_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picture_back.Image = global::Balkan_Wings_1.Properties.Resources.back;
+            this.picture_back.Location = new System.Drawing.Point(967, 46);
+            this.picture_back.Name = "picture_back";
+            this.picture_back.Size = new System.Drawing.Size(44, 41);
+            this.picture_back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_back.TabIndex = 3;
+            this.picture_back.TabStop = false;
+            this.picture_back.Click += new System.EventHandler(this.picture_back_Click);
+            // 
             // searchflight
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -192,11 +192,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Search for Flight";
             this.Load += new System.EventHandler(this.searchflight_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picture_back)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fligts_data_grid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_back)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

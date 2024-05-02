@@ -77,5 +77,16 @@ namespace Balkan_Wings_1
                 this.Show();
             }
         }
+
+        private void picture_booked_fligts_Click(object sender, EventArgs e)
+        {
+            bookedflights bookedflights = new bookedflights(current_user);
+            this.Hide();
+            if(bookedflights.ShowDialog() == DialogResult.OK)
+            {
+                current_user = bookedflights.current_user;
+                this.Show();
+            }
+        }
     }
 }

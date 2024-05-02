@@ -101,7 +101,8 @@ namespace Balkan_Wings_1
                 if (search_flight != null && search_flight.AvailableSeats > 0)
                 {
                     search_flight.bookseats((int)num_ticket.Value);
-                    current_user.booked_flights.Add(search_flight);
+                    booked_flight booked_Flight = new booked_flight(search_flight, (int)num_ticket.Value);
+                    current_user.booked_flights.Add(booked_Flight);
 
                     MessageBox.Show("Booking successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.DialogResult = DialogResult.OK;

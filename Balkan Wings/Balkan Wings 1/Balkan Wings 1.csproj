@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bookedflights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookedflights.Designer.cs">
+      <DependentUpon>bookedflights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booked_flight.cs" />
     <Compile Include="bookflight.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +84,12 @@
     <Compile Include="myprofile.Designer.cs">
       <DependentUpon>myprofile.cs</DependentUpon>
     </Compile>
+    <Compile Include="payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="searchflight.cs">
@@ -92,6 +105,9 @@
       <DependentUpon>signup.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="bookedflights.resx">
+      <DependentUpon>bookedflights.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bookflight.resx">
       <DependentUpon>bookflight.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="myprofile.resx">
       <DependentUpon>myprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -180,6 +199,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\book_flight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booked_flights.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,3 +34,5 @@ C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\bin\Deb
 C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan_Wings_1.myprofile.resources
 C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan_Wings_1.searchflight.resources
 C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan_Wings_1.bookflight.resources
+C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan_Wings_1.bookedflights.resources
+C:\Users\dmlad\OneDrive\Desktop\BALKAN WINGS\Balkan Wings\Balkan Wings 1\obj\Debug\Balkan_Wings_1.payment.resources

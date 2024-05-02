@@ -16,8 +16,8 @@ namespace Balkan_Wings_1
         public string AircraftType { get; set; }
         public int TotalSeats { get; set; }
         public int AvailableSeats { get; set; }
-
         public int Price { get; set; }
+
 
         public Flight(string flightNumber, string departureLocation, string arrivalLocation, DateTime departureTime, DateTime arrivalTime, string aircraftType, int totalSeats, int availableSeats, int price)
         {
