@@ -23,6 +23,8 @@ namespace Balkan_Wings_1
             old_info = user;
         }
 
+        
+
         private void myprofile_Load(object sender, EventArgs e)
         {
             lb_name.Text = $"{current_user.name} {current_user.surname}";

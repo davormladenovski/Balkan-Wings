@@ -25,10 +25,12 @@ namespace Balkan_Wings_1
             users.Add(new User("Isabella", "Anderson", "isabella.anderson@hotmail.com", "0722222222", "AndersonIsabella."));
             users.Add(new User("Benjamin", "Thompson", "bthompson@yahoo.com", "0733333333", "ThompsonBenjamin#"));
 
+            generator();
+
         }
 
         public List<User> users = new List<User>();
-
+        public List<Flight> flights = new List<Flight>();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -137,11 +139,10 @@ namespace Balkan_Wings_1
                 else
                 {
 
-                    dashboard dashboard = new dashboard(new_user);
+                    dashboard dashboard = new dashboard(new_user,flights);
                     this.Hide();
                     if (dashboard.ShowDialog() == DialogResult.OK)
                     {
-
                         this.Show();
                     }
                   
@@ -165,5 +166,71 @@ namespace Balkan_Wings_1
         {
             login_function();
         }
+
+
+        public void generator()
+        {
+            for (int i = 0; i < 200; i++)
+            {
+                string flightNumber = "BW" + (i + 1).ToString("000");
+                string departureLocation = GetRandomLocation();
+                string arrivalLocation = GetRandomLocation();
+                if (departureLocation != arrivalLocation)
+                {
+
+                }
+                else
+                {
+                   
+                    while (departureLocation == arrivalLocation)
+                    {
+                        departureLocation = GetRandomLocation();
+                    }
+                }
+                    DateTime departureTime = GetRandomDateTime();
+                    DateTime arrivalTime = departureTime.AddHours(new Random().Next(1, 12));
+                    string aircraftType = GetRandomAircraftType();
+                    int totalSeats = new Random().Next(100, 400);
+                    int a = new Random().Next(0, totalSeats);
+                    int price = new Random().Next(100,500);
+
+                    Flight flight = new Flight(flightNumber, departureLocation, arrivalLocation,
+                                               departureTime, arrivalTime, aircraftType, totalSeats, a,price);
+
+                    flights.Add(flight);
+                
+                
+            }
+
+
+        }
+
+        public static string[] locations = { "New York", "London", "Paris", "Tokyo", "Dubai",
+                                     "Los Angeles", "Sydney", "Moscow", "Berlin", "Rome",
+                                     "Beijing", "Toronto", "Istanbul", "Mumbai", "Cairo",
+                                     "Athens", "Vienna", "Madrid", "Lisbon", "Stockholm" };
+
+        static string GetRandomLocation()
+        {
+            return locations[new Random().Next(locations.Length)];
+        }
+
+        static DateTime GetRandomDateTime()
+        {
+            DateTime start = new DateTime(2024, 1, 1);
+            int range = (DateTime.Today - start).Days;
+            return start.AddDays(new Random().Next(range));
+        }
+
+        static string[] aircraftTypes = { "Boeing 777", "Airbus A380", "Boeing 787",
+                                          "Airbus A350", "Embraer E190", "Bombardier CRJ900",
+                                          "Boeing 737", "Airbus A320" };
+
+        static string GetRandomAircraftType()
+        {
+            return aircraftTypes[new Random().Next(aircraftTypes.Length)];
+        }
+
+
     }
 }

@@ -45,17 +45,17 @@
             this.tb_email = new System.Windows.Forms.TextBox();
             this.tb_surname = new System.Windows.Forms.TextBox();
             this.tb_first_name = new System.Windows.Forms.TextBox();
+            this.picture_back = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_name = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Main_logo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picture_back = new System.Windows.Forms.PictureBox();
+            this.Main_logo = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Main_logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_back)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Main_logo)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -230,24 +230,58 @@
             this.tb_first_name.Size = new System.Drawing.Size(150, 30);
             this.tb_first_name.TabIndex = 0;
             // 
+            // picture_back
+            // 
+            this.picture_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picture_back.Image = global::Balkan_Wings_1.Properties.Resources.back;
+            this.picture_back.Location = new System.Drawing.Point(967, 12);
+            this.picture_back.Name = "picture_back";
+            this.picture_back.Size = new System.Drawing.Size(44, 42);
+            this.picture_back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_back.TabIndex = 2;
+            this.picture_back.TabStop = false;
+            this.picture_back.Click += new System.EventHandler(this.picture_back_Click);
+            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Arial Black", 25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(33)))), ((int)(((byte)(53)))));
-            this.label1.Location = new System.Drawing.Point(43, 64);
+            this.label1.Location = new System.Drawing.Point(6, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 59);
+            this.label1.Size = new System.Drawing.Size(340, 59);
             this.label1.TabIndex = 1;
             this.label1.Text = "My Profile";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lb_name
             // 
             this.lb_name.Font = new System.Drawing.Font("Arial", 20F);
-            this.lb_name.Location = new System.Drawing.Point(46, 352);
+            this.lb_name.Location = new System.Drawing.Point(6, 352);
             this.lb_name.Name = "lb_name";
-            this.lb_name.Size = new System.Drawing.Size(249, 39);
+            this.lb_name.Size = new System.Drawing.Size(343, 39);
             this.lb_name.TabIndex = 1;
             this.lb_name.Text = "Name Surname";
+            this.lb_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Balkan_Wings_1.Properties.Resources.my_profile;
+            this.pictureBox1.Location = new System.Drawing.Point(93, 170);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 144);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Main_logo
+            // 
+            this.Main_logo.Image = global::Balkan_Wings_1.Properties.Resources.logo;
+            this.Main_logo.Location = new System.Drawing.Point(67, 486);
+            this.Main_logo.Name = "Main_logo";
+            this.Main_logo.Size = new System.Drawing.Size(204, 191);
+            this.Main_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Main_logo.TabIndex = 2;
+            this.Main_logo.TabStop = false;
             // 
             // groupBox1
             // 
@@ -262,38 +296,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-            // 
-            // Main_logo
-            // 
-            this.Main_logo.Image = global::Balkan_Wings_1.Properties.Resources.logo;
-            this.Main_logo.Location = new System.Drawing.Point(67, 486);
-            this.Main_logo.Name = "Main_logo";
-            this.Main_logo.Size = new System.Drawing.Size(204, 191);
-            this.Main_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Main_logo.TabIndex = 2;
-            this.Main_logo.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Balkan_Wings_1.Properties.Resources.my_profile;
-            this.pictureBox1.Location = new System.Drawing.Point(93, 170);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 144);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // picture_back
-            // 
-            this.picture_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picture_back.Image = global::Balkan_Wings_1.Properties.Resources.back;
-            this.picture_back.Location = new System.Drawing.Point(967, 12);
-            this.picture_back.Name = "picture_back";
-            this.picture_back.Size = new System.Drawing.Size(44, 42);
-            this.picture_back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_back.TabIndex = 2;
-            this.picture_back.TabStop = false;
-            this.picture_back.Click += new System.EventHandler(this.picture_back_Click);
             // 
             // myprofile
             // 
@@ -314,10 +316,10 @@
             this.Load += new System.EventHandler(this.myprofile_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Main_logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_back)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Main_logo)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -339,11 +341,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button bt_reset;
         private System.Windows.Forms.Button bt_update;
+        private System.Windows.Forms.PictureBox picture_back;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lb_name;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox Main_logo;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox picture_back;
     }
 }
