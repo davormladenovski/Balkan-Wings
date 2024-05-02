@@ -172,11 +172,6 @@ namespace Balkan_Wings_1
             tb_pass.PasswordChar = tb_pass.PasswordChar == '*' ? '\0' : '*';
         }
 
-        private void tb_pass_KeyPress(object sender, KeyPressEventArgs e)
-        {
-         
-        }
-
         private void tb_name_KeyPress(object sender, KeyPressEventArgs e)
         {
             error_empty.SetError(tb_name, "");

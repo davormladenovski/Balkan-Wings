@@ -102,9 +102,15 @@ namespace Balkan_Wings_1
 
             if (booked_flights_data_grid.SelectedRows.Count > 0)
             {
+                
+                
+
+                if (booked_flights_data_grid.SelectedRows[0].Cells["Flight Number"].Value == null) {
+                    MessageBox.Show("Please select a flight to proceed with payment.", "No Flight Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 string selectedFlightNumber = booked_flights_data_grid.SelectedRows[0].Cells["Flight Number"].Value.ToString();
-
 
                 booked_flight selectedBookedFlight = current_user.booked_flights.FirstOrDefault(f => f.flight.FlightNumber == selectedFlightNumber);
 

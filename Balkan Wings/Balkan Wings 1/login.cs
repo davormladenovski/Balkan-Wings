@@ -22,11 +22,6 @@ namespace Balkan_Wings_1
 
         public User user { get; set; }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void lb_signup_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.No;
@@ -68,12 +63,6 @@ namespace Balkan_Wings_1
 
             user = new User("", "", email, "", password);
             this.DialogResult = DialogResult.OK;
-
-        }
-
-        private void tb_pass_KeyPress(object sender, KeyPressEventArgs e)
-        {
-           
 
         }
 

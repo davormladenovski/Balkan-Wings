@@ -144,6 +144,15 @@ namespace Balkan_Wings_1
                     if (dashboard.ShowDialog() == DialogResult.OK)
                     {
                         this.Show();
+
+                        for (int i = 0; i < users.Count; i++)
+                        {
+                            if (users[i].email == new_user.email && users[i].password == new_user.password)
+                            {
+                                users[i] = dashboard.current_user;
+                                break;
+                            }
+                        }
                     }
                   
                 }
@@ -170,7 +179,7 @@ namespace Balkan_Wings_1
 
         public void generator()
         {
-            for (int i = 0; i < 200; i++)
+            for (int i = 0; i < 250; i++)
             {
                 string flightNumber = "BW" + (i + 1).ToString("000");
                 string departureLocation = GetRandomLocation();

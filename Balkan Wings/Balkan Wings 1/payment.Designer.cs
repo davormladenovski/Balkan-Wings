@@ -247,7 +247,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(250)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(354, 632);
+            this.ClientSize = new System.Drawing.Size(354, 641);
             this.ControlBox = false;
             this.Controls.Add(this.tb_date);
             this.Controls.Add(this.picture_back);
