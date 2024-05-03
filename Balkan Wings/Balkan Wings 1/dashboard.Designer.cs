@@ -145,7 +145,7 @@
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label4.Font = new System.Drawing.Font("Arial Black", 10F);
-            this.label4.Location = new System.Drawing.Point(107, 455);
+            this.label4.Location = new System.Drawing.Point(104, 455);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(169, 24);
             this.label4.TabIndex = 7;

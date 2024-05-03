@@ -80,11 +80,12 @@ namespace Balkan_Wings_1
 
         private void picture_booked_fligts_Click(object sender, EventArgs e)
         {
-            bookedflights bookedflights = new bookedflights(current_user);
+            bookedflights bookedflights = new bookedflights(current_user,flights);
             this.Hide();
             if(bookedflights.ShowDialog() == DialogResult.OK)
             {
                 current_user = bookedflights.current_user;
+                flights=bookedflights.flights;
                 this.Show();
             }
         }

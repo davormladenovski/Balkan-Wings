@@ -105,7 +105,7 @@ namespace Balkan_Wings_1
 
             if (!IsValidPassword(password))
             {
-                MessageBox.Show("Password must have at least 15 characters, including one uppercase letter, one number, and one special character.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Password must have at least 7 characters, including one uppercase letter, one number, and one special character.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

@@ -13,10 +13,12 @@ namespace Balkan_Wings_1
     public partial class bookedflights : Form
     {
         public User current_user;
-        public bookedflights(User u)
+        public List<Flight> flights;
+        public bookedflights(User u, List<Flight> flights)
         {
             InitializeComponent();
             current_user = u;
+            this.flights = flights;
         }
 
         private void bookedflights_Load(object sender, EventArgs e)
@@ -117,8 +119,21 @@ namespace Balkan_Wings_1
                 payment payment = new payment(selectedBookedFlight);
                 if(payment.ShowDialog()== DialogResult.OK)
                 {
+                    Flight selectedFlight = flights.FirstOrDefault(f => f.FlightNumber == selectedFlightNumber);
+                    if (selectedFlight != null)
+                    {
+                        selectedFlight.AvailableSeats -= selectedBookedFlight.num_tickets; 
+                                                                                           
+                    }
+
                     current_user.booked_flights.Remove(selectedBookedFlight);
                     bookedflights_Load(sender, e);
+
+                    int index = flights.FindIndex(f => f.FlightNumber == selectedFlightNumber);
+                    if (index != -1)
+                    {
+                        flights[index] = selectedFlight;
+                    }
                 }
                 
 
@@ -128,6 +143,39 @@ namespace Balkan_Wings_1
                 MessageBox.Show("Please select a flight to proceed with payment.", "No Flight Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
+
+        }
+
+        private void bt_unbook_Click(object sender, EventArgs e)
+        {
+            if (booked_flights_data_grid.SelectedRows.Count > 0)
+            {
+                if (booked_flights_data_grid.SelectedRows[0].Cells["Flight Number"].Value == null)
+                {
+                    MessageBox.Show("Please select a flight to unbook.", "No Flight Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                string selectedFlightNumber = booked_flights_data_grid.SelectedRows[0].Cells["Flight Number"].Value.ToString();
+
+                booked_flight selectedBookedFlight = current_user.booked_flights.FirstOrDefault(f => f.flight.FlightNumber == selectedFlightNumber);
+
+                if (selectedBookedFlight != null)
+                {
+                    
+                    current_user.booked_flights.Remove(selectedBookedFlight);
+                    MessageBox.Show("Flight unbooked successfully.", "Unbooking Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    bookedflights_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Selected flight not found in booked flights list.", "Flight Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a flight to unbook.", "No Flight Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
     }

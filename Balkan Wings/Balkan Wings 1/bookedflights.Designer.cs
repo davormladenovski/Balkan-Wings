@@ -38,6 +38,7 @@
             this.picture_book_flight = new System.Windows.Forms.PictureBox();
             this.picture_back = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.bt_unbook = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.booked_flights_data_grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_book_flight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_back)).BeginInit();
@@ -71,9 +72,9 @@
             // 
             this.bt_pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
             this.bt_pay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_pay.Font = new System.Drawing.Font("Arial Black", 7.5F);
+            this.bt_pay.Font = new System.Drawing.Font("Arial Black", 12F);
             this.bt_pay.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bt_pay.Location = new System.Drawing.Point(763, 607);
+            this.bt_pay.Location = new System.Drawing.Point(763, 554);
             this.bt_pay.Name = "bt_pay";
             this.bt_pay.Size = new System.Drawing.Size(243, 38);
             this.bt_pay.TabIndex = 16;
@@ -141,7 +142,7 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Arial", 8F);
-            this.label4.Location = new System.Drawing.Point(763, 563);
+            this.label4.Location = new System.Drawing.Point(763, 510);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(2);
             this.label4.Size = new System.Drawing.Size(250, 38);
@@ -149,12 +150,27 @@
             this.label4.Text = "You can only make a payment on one flight!";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // bt_unbook
+            // 
+            this.bt_unbook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.bt_unbook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_unbook.Font = new System.Drawing.Font("Arial Black", 12F);
+            this.bt_unbook.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.bt_unbook.Location = new System.Drawing.Point(763, 607);
+            this.bt_unbook.Name = "bt_unbook";
+            this.bt_unbook.Size = new System.Drawing.Size(243, 38);
+            this.bt_unbook.TabIndex = 21;
+            this.bt_unbook.Text = "Unbook";
+            this.bt_unbook.UseVisualStyleBackColor = false;
+            this.bt_unbook.Click += new System.EventHandler(this.bt_unbook_Click);
+            // 
             // bookedflights
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(1023, 672);
             this.ControlBox = false;
+            this.Controls.Add(this.bt_unbook);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bt_search);
             this.Controls.Add(this.label2);
@@ -190,5 +206,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tb_flight_num_search;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button bt_unbook;
     }
 }
