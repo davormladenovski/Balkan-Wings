@@ -34,8 +34,9 @@ namespace Balkan_Wings_1
             string creditCardNumber = tb_card_number.Text.Trim();
             string expirationDate = tb_date.Text;
             string cvv = tb_sec_code.Text.Trim();
+            string name = tb_name_on_card.Text;
 
-            if  (IsValidCVV(cvv) && IsExpirationDateValid(expirationDate))
+            if  (IsValidCVV(cvv) && IsExpirationDateValid(expirationDate) && !string.IsNullOrEmpty(creditCardNumber) && !string.IsNullOrEmpty(name) )
             {
                 
                 MessageBox.Show("Payment successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

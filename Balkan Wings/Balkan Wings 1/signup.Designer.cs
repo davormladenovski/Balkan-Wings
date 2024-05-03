@@ -53,14 +53,14 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 20F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(116)))));
-            this.label1.Location = new System.Drawing.Point(94, 49);
+            this.label1.Location = new System.Drawing.Point(3, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 48);
+            this.label1.Size = new System.Drawing.Size(348, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sign Up";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tb_name
             // 
@@ -116,7 +116,6 @@
             this.tb_pass.TabIndex = 4;
             this.tb_pass.Text = "Password";
             this.tb_pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_pass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_pass_KeyPress);
             // 
             // tb_phone
             // 

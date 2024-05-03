@@ -94,7 +94,6 @@
             this.tb_pass.TabIndex = 15;
             this.tb_pass.Text = "Password";
             this.tb_pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_pass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_pass_KeyPress);
             // 
             // tb_email
             // 
@@ -112,14 +111,14 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 20F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(116)))));
-            this.label1.Location = new System.Drawing.Point(119, 31);
+            this.label1.Location = new System.Drawing.Point(3, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 48);
+            this.label1.Size = new System.Drawing.Size(349, 48);
             this.label1.TabIndex = 11;
             this.label1.Text = "Login";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // picture_show_pass
             // 
@@ -142,7 +141,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // error_empty
             // 

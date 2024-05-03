@@ -34,22 +34,22 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.picture_my_profile = new System.Windows.Forms.PictureBox();
+            this.picture_logout = new System.Windows.Forms.PictureBox();
+            this.Main_logo = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.picture_booked_fligts = new System.Windows.Forms.PictureBox();
             this.picture_book_flight = new System.Windows.Forms.PictureBox();
             this.picture_flight_search = new System.Windows.Forms.PictureBox();
-            this.picture_my_profile = new System.Windows.Forms.PictureBox();
-            this.picture_logout = new System.Windows.Forms.PictureBox();
-            this.Main_logo = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_booked_fligts)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_book_flight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_flight_search)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_my_profile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_logout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Main_logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_booked_fligts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_book_flight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_flight_search)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -90,7 +90,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Arial Black", 10F);
-            this.label3.Location = new System.Drawing.Point(908, 160);
+            this.label3.Location = new System.Drawing.Point(909, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 24);
             this.label3.TabIndex = 6;
@@ -100,18 +100,52 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Arial Black", 10F);
-            this.label2.Location = new System.Drawing.Point(771, 160);
+            this.label2.Location = new System.Drawing.Point(766, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 24);
             this.label2.TabIndex = 5;
             this.label2.Text = "My profile";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // picture_my_profile
+            // 
+            this.picture_my_profile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picture_my_profile.Image = global::Balkan_Wings_1.Properties.Resources.my_profile;
+            this.picture_my_profile.Location = new System.Drawing.Point(775, 80);
+            this.picture_my_profile.Name = "picture_my_profile";
+            this.picture_my_profile.Size = new System.Drawing.Size(83, 80);
+            this.picture_my_profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_my_profile.TabIndex = 4;
+            this.picture_my_profile.TabStop = false;
+            this.picture_my_profile.Click += new System.EventHandler(this.picture_my_profile_Click);
+            // 
+            // picture_logout
+            // 
+            this.picture_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picture_logout.Image = global::Balkan_Wings_1.Properties.Resources.exit;
+            this.picture_logout.Location = new System.Drawing.Point(898, 80);
+            this.picture_logout.Name = "picture_logout";
+            this.picture_logout.Size = new System.Drawing.Size(83, 80);
+            this.picture_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_logout.TabIndex = 3;
+            this.picture_logout.TabStop = false;
+            this.picture_logout.Click += new System.EventHandler(this.picture_logout_Click);
+            // 
+            // Main_logo
+            // 
+            this.Main_logo.Image = global::Balkan_Wings_1.Properties.Resources.logo;
+            this.Main_logo.Location = new System.Drawing.Point(15, 32);
+            this.Main_logo.Name = "Main_logo";
+            this.Main_logo.Size = new System.Drawing.Size(204, 191);
+            this.Main_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Main_logo.TabIndex = 2;
+            this.Main_logo.TabStop = false;
+            // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label4.Font = new System.Drawing.Font("Arial Black", 10F);
-            this.label4.Location = new System.Drawing.Point(96, 455);
+            this.label4.Location = new System.Drawing.Point(104, 455);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(169, 24);
             this.label4.TabIndex = 7;
@@ -132,7 +166,7 @@
             // 
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label6.Font = new System.Drawing.Font("Arial Black", 10F);
-            this.label6.Location = new System.Drawing.Point(742, 455);
+            this.label6.Location = new System.Drawing.Point(746, 455);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(196, 24);
             this.label6.TabIndex = 11;
@@ -175,40 +209,6 @@
             this.picture_flight_search.TabStop = false;
             this.picture_flight_search.Click += new System.EventHandler(this.picture_flight_search_Click);
             // 
-            // picture_my_profile
-            // 
-            this.picture_my_profile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picture_my_profile.Image = global::Balkan_Wings_1.Properties.Resources.my_profile;
-            this.picture_my_profile.Location = new System.Drawing.Point(775, 80);
-            this.picture_my_profile.Name = "picture_my_profile";
-            this.picture_my_profile.Size = new System.Drawing.Size(83, 80);
-            this.picture_my_profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_my_profile.TabIndex = 4;
-            this.picture_my_profile.TabStop = false;
-            this.picture_my_profile.Click += new System.EventHandler(this.picture_my_profile_Click);
-            // 
-            // picture_logout
-            // 
-            this.picture_logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picture_logout.Image = global::Balkan_Wings_1.Properties.Resources.exit;
-            this.picture_logout.Location = new System.Drawing.Point(898, 80);
-            this.picture_logout.Name = "picture_logout";
-            this.picture_logout.Size = new System.Drawing.Size(83, 80);
-            this.picture_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_logout.TabIndex = 3;
-            this.picture_logout.TabStop = false;
-            this.picture_logout.Click += new System.EventHandler(this.picture_logout_Click);
-            // 
-            // Main_logo
-            // 
-            this.Main_logo.Image = global::Balkan_Wings_1.Properties.Resources.logo;
-            this.Main_logo.Location = new System.Drawing.Point(15, 32);
-            this.Main_logo.Name = "Main_logo";
-            this.Main_logo.Size = new System.Drawing.Size(204, 191);
-            this.Main_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Main_logo.TabIndex = 2;
-            this.Main_logo.TabStop = false;
-            // 
             // dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -230,12 +230,12 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.dashboard_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picture_booked_fligts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_book_flight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_flight_search)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_my_profile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_logout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Main_logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_booked_fligts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_book_flight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_flight_search)).EndInit();
             this.ResumeLayout(false);
 
         }

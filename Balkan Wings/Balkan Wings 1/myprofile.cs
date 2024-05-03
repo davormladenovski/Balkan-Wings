@@ -23,8 +23,6 @@ namespace Balkan_Wings_1
             old_info = user;
         }
 
-        
-
         private void myprofile_Load(object sender, EventArgs e)
         {
             lb_name.Text = $"{current_user.name} {current_user.surname}";
@@ -64,7 +62,7 @@ namespace Balkan_Wings_1
                 return;
             }
 
-            current_user = new User(name,surname,email,phone,passport);
+            current_user = new User(name,surname,email,phone,current_user.password);
             current_user.Address = address;
             current_user.passport_num = passport;
 
